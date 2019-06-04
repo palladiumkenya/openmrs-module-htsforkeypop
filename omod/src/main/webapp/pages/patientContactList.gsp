@@ -1,7 +1,7 @@
 <%
     ui.decorateWith("kenyaemr", "standardPage", [patient: currentPatient, layout: "sidebar"])
     def menuItems = [
-            [label: "Back to home", iconProvider: "kenyaui", icon: "buttons/back.png", label: "Back to Client home", href: ui.pageLink("kenyaemr", "clinician/clinicianViewPatient", [patient: currentPatient, patientId: currentPatient.patientId])]
+            [label: "Back to home", iconProvider: "kenyaui", icon: "buttons/back.png", label: "Back to Client home", href: ui.pageLink("kenyaemr", "clinicianFacing/patientProfile", [patient: currentPatient, patientId: currentPatient.patientId])]
     ]
 %>
 <style>
